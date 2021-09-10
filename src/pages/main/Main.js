@@ -24,6 +24,7 @@ function Main() {
   };
 
   useEffect(() => {
+    // Added timeout because the request was too fast and the spinner was barely there
     setTimeout(() => {
       getCryptoCoins(0, defaultQuery);
     }, 1000);
